@@ -1,0 +1,49 @@
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 128px;
+
+    .title {
+        font-weight: 600;
+    }
+
+    &__navLinks {
+        display: flex;
+        gap: 12px;
+        font-size: 12px;
+        .active {
+            opacity: 1;
+        }
+        p {
+            opacity: 0.6;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__cta {
+        display: flex;
+        gap: 8px;
+        button {
+            padding: 12px 16px;
+            background-color: #179B8B;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            font-weight: 250;
+            cursor: pointer;
+            &:nth-child(1) {
+                border: 1px solid #179B8B;
+                background: transparent;
+                color: #179B8B;
+                &:hover {
+                    background-color: #179B8B;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
